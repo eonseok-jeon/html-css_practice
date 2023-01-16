@@ -12,7 +12,44 @@
         box-sizing: border-box;
       }
       body {
+        width: 1000px;
         margin: 300px auto;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+      }
+      .row:nth-child(even) {
+        background-color: rgb(242, 245, 247);
+      }
+      .row:nth-child(odd) {
+        background-color: rgb(201, 202, 203);
+      }
+      .row:first-child {
+        background-color: rgb(42, 110, 88);
+        color: white;
+        font-weight: 600;
+      }
+      .chair {
+        width: 30%;
+        font-weight: 600;
+      }
+      .laid_back {
+        width: 25%;
+      }
+      .worker_bee {
+        width: 25%;
+      }
+      .the_cha {
+        width: 20%;
       }
     </style>
   </head>
