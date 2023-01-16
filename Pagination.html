@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 1000px;
+        margin: 100px auto;
+      }
+      .pagination {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 40px;
+      }
+      .chevron {
+        border: 1px solid rgb(46, 137, 85);
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .chevron-icon {
+        width: 30px;
+        height: 30px;
+        color: rgb(46, 137, 85);
+        stroke-width: 5px;
+      }
+      .numbers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+      }
+      .number {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: white;
+      }
+      .selected {
+        border: 1px solid rgb(33, 96, 60);
+        background-color: rgb(33, 96, 60);
+        color: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagination">
+      <button class="chevron left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="chevron-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <div class="numbers">
+        <button class="number 1st">1</button>
+        <button class="number 2nd">2</button>
+        <button class="number 3nd selected">3</button>
+        <button class="number 4th">4</button>
+        <button class="number 5th">5</button>
+        <button class="number 6th">6</button>
+        <button class="number etc">...</button>
+        <button class="number 23th">23</button>
+      </div>
+      <button class="chevron right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="chevron-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
